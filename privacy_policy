@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Powerboat Show Insider</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: #374151;
+            background: #f9fafb;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .last-updated {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+        }
+        
+        h2 {
+            color: #dc2626;
+            font-size: 1.75rem;
+            margin: 2.5rem 0 1rem 0;
+            padding-top: 1rem;
+            border-top: 2px solid #e5e7eb;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+        
+        h3 {
+            color: #1f2937;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+        }
+        
+        .contact-box {
+            background: #f3f4f6;
+            border: 2px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+        
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .footer a {
+            color: #fbbf24;
+            text-decoration: none;
+        }
+        
+        a {
+            color: #dc2626;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p>Powerboat Show Insider</p>
+    </div>
+    
+    <div class="container">
+        <div class="last-updated">
+            <strong>Last Updated:</strong> October 11, 2025
+        </div>
+        
+        <p>At Powerboat Show Insider ("we," "our," or "us"), we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
+        
+        <h2>1. Information We Collect</h2>
+        
+        <h3>Personal Information You Provide</h3>
+        <p>We collect information that you voluntarily provide to us when you:</p>
+        <ul>
+            <li>Download our free boat show guide</li>
+            <li>Subscribe to our newsletter</li>
+            <li>Contact us via email</li>
+            <li>Make a payment through PayPal</li>
+        </ul>
+        
+        <p>This information may include:</p>
+        <ul>
+            <li><strong>Name:</strong> First and last name</li>
+            <li><strong>Email Address:</strong> For communication and content delivery</li>
+            <li><strong>Payment Information:</strong> Processed securely through PayPal (we do not store credit card details)</li>
+        </ul>
+        
+        <h3>Automatically Collected Information</h3>
+        <p>When you visit our website, we automatically collect certain information about your device, including:</p>
+        <ul>
+            <li>IP address</li>
+            <li>Browser type and version</li>
+            <li>Operating system</li>
+            <li>Referring website</li>
+            <li>Pages viewed and time spent</li>
+            <li>Access times and dates</li>
+        </ul>
+        
+        <h2>2. How We Use Your Information</h2>
+        
+        <p>We use the information we collect for the following purposes:</p>
+        
+        <ul>
+            <li><strong>To Deliver Content:</strong> Send you the free boat show guide and monthly newsletter content</li>
+            <li><strong>To Process Payments:</strong> Handle subscription payments through PayPal</li>
+            <li><strong>To Communicate:</strong> Send important updates, respond to inquiries, and provide customer support</li>
+            <li><strong>To Improve Our Services:</strong> Analyze usage patterns to enhance user experience</li>
+            <li><strong>To Send Marketing:</strong> Share relevant boat show information, tips, and offers (you can opt-out anytime)</li>
+            <li><strong>To Comply with Legal Obligations:</strong> Meet regulatory requirements and enforce our terms</li>
+        </ul>
+        
+        <h2>3. How We Share Your Information</h2>
+        
+        <p>We do not sell your personal information. We may share your information with:</p>
+        
+        <h3>Service Providers</h3>
+        <ul>
+            <li><strong>Email Service Provider:</strong> (e.g., Mailchimp, ConvertKit) to send emails and manage subscriptions</li>
+            <li><strong>Payment Processor:</strong> PayPal processes all subscription payments securely</li>
+            <li><strong>Analytics Services:</strong> Google Analytics to understand website usage (anonymized data)</li>
+            <li><strong>Web Hosting:</strong> Our hosting provider stores website data</li>
+        </ul>
+        
+        <h3>Legal Requirements</h3>
+        <p>We may disclose your information if required by law, regulation, legal process, or governmental request.</p>
+        
+        <h3>Business Transfers</h3>
+        <p>If we merge with or are acquired by another company, your information may be transferred as part of that transaction.</p>
+        
+        <h2>4. Your Data Protection Rights</h2>
+        
+        <p>Depending on your location, you have the following rights:</p>
+        
+        <ul>
+            <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+            <li><strong>Objection:</strong> Object to our processing of your information</li>
+            <li><strong>Restriction:</strong> Request restriction of processing your information</li>
+            <li><strong>Data Portability:</strong> Request transfer of your information to another service</li>
+            <li><strong>Withdraw Consent:</strong> Withdraw consent for marketing communications at any time</li>
+        </ul>
+        
+        <p>To exercise these rights, please contact us using the information below.</p>
+        
+        <h2>5. Email Communications and Unsubscribe</h2>
+        
+        <p>You can opt-out of marketing emails at any time by:</p>
+        <ul>
+            <li>Clicking the "Unsubscribe" link at the bottom of any email</li>
+            <li>Contacting us directly at the email below</li>
+            <li>Managing your preferences in your account settings</li>
+        </ul>
+        
+        <p><strong>Note:</strong> Even if you unsubscribe from marketing emails, we may still send you transactional emails related to your subscription (payment confirmations, account updates, etc.).</p>
+        
+        <h2>6. Cookies and Tracking Technologies</h2>
+        
+        <p>We use cookies and similar tracking technologies to:</p>
+        <ul>
+            <li>Remember your preferences</li>
+            <li>Understand how you use our website</li>
+            <li>Improve user experience</li>
+            <li>Track conversions from advertising</li>
+        </ul>
+        
+        <p>You can control cookies through your browser settings. However, disabling cookies may limit your ability to use certain features of our website.</p>
+        
+        <h3>Types of Cookies We Use</h3>
+        <ul>
+            <li><strong>Essential Cookies:</strong> Required for website functionality</li>
+            <li><strong>Analytics Cookies:</strong> Help us understand website usage (Google Analytics)</li>
+            <li><strong>Marketing Cookies:</strong> Track advertising effectiveness</li>
+        </ul>
+        
+        <h2>7. Data Security</h2>
+        
+        <p>We implement reasonable security measures to protect your information, including:</p>
+        <ul>
+            <li>SSL/TLS encryption for data transmission</li>
+            <li>Secure servers and databases</li>
+            <li>Limited access to personal information</li>
+            <li>Regular security assessments</li>
+        </ul>
+        
+        <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+        
+        <h2>8. Data Retention</h2>
+        
+        <p>We retain your personal information for as long as:</p>
+        <ul>
+            <li>You maintain an active subscription</li>
+            <li>Necessary to provide our services</li>
+            <li>Required by law or for legitimate business purposes</li>
+        </ul>
+        
+        <p>After cancellation, we may retain some information for:</p>
+        <ul>
+            <li>Tax and accounting purposes (typically 7 years)</li>
+            <li>Fraud prevention and legal compliance</li>
+            <li>Resolving disputes</li>
+        </ul>
+        
+        <h2>9. Children's Privacy</h2>
+        
+        <p>Our services are not intended for individuals under 18 years of age. We do not knowingly collect information from children. If you believe we have collected information from a child, please contact us immediately.</p>
+        
+        <h2>10. Third-Party Links</h2>
+        
+        <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.</p>
+        
+        <h2>11. International Data Transfers</h2>
+        
+        <p>Your information may be transferred to and processed in countries other than your own. These countries may have different data protection laws. By using our services, you consent to such transfers.</p>
+        
+        <h2>12. California Privacy Rights (CCPA)</h2>
+        
+        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li>Right to know what personal information is collected</li>
+            <li>Right to know if personal information is sold or disclosed</li>
+            <li>Right to opt-out of the sale of personal information (we do not sell data)</li>
+            <li>Right to deletion</li>
+            <li>Right to non-discrimination for exercising your rights</li>
+        </ul>
+        
+        <h2>13. European Union Users (GDPR)</h2>
+        
+        <p>If you are in the European Union, we process your data based on:</p>
+        <ul>
+            <li><strong>Consent:</strong> You have given explicit consent</li>
+            <li><strong>Contract:</strong> Processing is necessary to fulfill our services</li>
+            <li><strong>Legal Obligation:</strong> We must comply with legal requirements</li>
+            <li><strong>Legitimate Interest:</strong> We have a legitimate business interest</li>
+        </ul>
+        
+        <p>You have the right to lodge a complaint with your local data protection authority.</p>
+        
+        <h2>14. Changes to This Privacy Policy</h2>
+        
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+        
+        <p>For material changes, we will provide additional notice via:</p>
+        <ul>
+            <li>Email notification to subscribers</li>
+            <li>Prominent notice on our website</li>
+        </ul>
+        
+        <h2>15. Contact Us</h2>
+        
+        <div class="contact-box">
+            <p><strong>If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us:</strong></p>
+            
+            <p><strong>Email:</strong> privacy@powerboatshowinsider.com</p>
+            
+            <p><strong>Mail:</strong><br>
+            Powerboat Show Insider<br>
+            123 Marina Way<br>
+            Annapolis, MD 21401<br>
+            United States</p>
+            
+            <p><strong>Response Time:</strong> We will respond to your request within 30 days (or as required by applicable law).</p>
+        </div>
+        
+        <h2>16. Payment Processing</h2>
+        
+        <p><strong>PayPal:</strong> All subscription payments are processed through PayPal. We do not store your credit card information. PayPal's privacy policy governs the collection and use of payment information: <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full" target="_blank">PayPal Privacy Policy</a></p>
+        
+        <h2>17. Your Consent</h2>
+        
+        <p>By using our website and services, you consent to this Privacy Policy and agree to its terms.</p>
+        
+        <hr style="margin: 3rem 0; border: none; border-top: 2px solid #e5e7eb;">
+        
+        <p style="text-align: center; color: #64748b; font-size: 0.875rem;">
+            This privacy policy is effective as of October 11, 2025 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
+        </p>
+    </div>
+    
+    <div class="footer">
+        <p><strong>Powerboat Show Insider</strong></p>
+        <p><a href="index.html">Home</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="mailto:support@powerboatshowinsider.com">Contact</a></p>
+        <p style="margin-top: 1rem;">© 2025 Powerboat Show Insider. All rights reserved.</p>
+    </div>
+</body>
+</html>
