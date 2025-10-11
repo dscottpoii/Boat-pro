@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerboat Insider - Sample Newsletter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 0.875rem;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .greeting {
+            font-size: 1.125rem;
+            color: #374151;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .section h2 {
+            color: #dc2626;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #dc2626;
+            padding-left: 1rem;
+        }
+        
+        .section h3 {
+            color: #374151;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        .section p {
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .highlight-box h3 {
+            color: #92400e;
+            margin-top: 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-item {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .feature-item strong {
+            color: #dc2626;
+        }
+        
+        .deal-card {
+            background: #ecfdf5;
+            border: 2px solid #6ee7b7;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .deal-card h4 {
+            color: #065f46;
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+        }
+        
+        .tips-list {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tips-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .tips-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .tips-list li::before {
+            content: '⚓';
+            position: absolute;
+            left: 0;
+            font-size: 1.25rem;
+        }
+        
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+        }
+        
+        .footer a {
+            color: #fbbf24;
+            text-decoration: none;
+        }
+        
+        .watermark {
+            background: #fef3c7;
+            border: 2px dashed #f59e0b;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .watermark h3 {
+            color: #92400e;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 0;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>⚓ Powerboat Insider</h1>
+            <p>October 2025 Edition • Your Monthly Source for Powerboating Excellence</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <p class="greeting">Ahoy, Powerboat Enthusiast!</p>
+            
+            <div class="watermark">
+                <h3>📧 SAMPLE NEWSLETTER</h3>
+                <p style="color: #92400e; margin: 0;">This is a preview of what you'll receive monthly for $9.99</p>
+            </div>
+            
+            <!-- Featured Article -->
+            <div class="section">
+                <h2>🚤 Featured: 2026 Boat Show Season Preview</h2>
+                <p>Mark your calendars! The 2026 powerboat show season is shaping up to be exceptional. Here's your exclusive early look at what's coming:</p>
+                
+                <h3>Key Dates for Your Calendar</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Miami Boat Show</strong><br>
+                        February 12-16, 2026<br>
+                        <small>Virginia Key & Convention Center</small>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Newport Show</strong><br>
+                        September 17-20, 2026<br>
+                        <small>Newport, RI</small>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Fort Lauderdale</strong><br>
+                        October 22-26, 2026<br>
+                        <small>Bahia Mar & Convention Center</small>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Annapolis Powerboat</strong><br>
+                        October 1-4, 2026<br>
+                        <small>Annapolis City Dock</small>
+                    </div>
+                </div>
+                
+                <p><strong>Insider Tip:</strong> Early bird tickets for Miami typically go on sale in November—that's a 25% savings over gate prices!</p>
+            </div>
+            
+            <!-- Boat Review -->
+            <div class="section">
+                <h2>⚡ New Model Spotlight: 2026 Tiara C39 Coupe</h2>
+                <p>We got an exclusive first look at Tiara's latest offering, and this vessel is turning heads for all the right reasons.</p>
+                
+                <div class="highlight-box">
+                    <h3>At a Glance</h3>
+                    <p><strong>Length:</strong> 39' 2"<br>
+                    <strong>Beam:</strong> 13' 4"<br>
+                    <strong>Power:</strong> Twin Volvo Penta IPS 600s<br>
+                    <strong>Top Speed:</strong> 34+ knots<br>
+                    <strong>Starting Price:</strong> $875,000</p>
+                </div>
+                
+                <h3>What We Love</h3>
+                <div class="tips-list">
+                    <ul>
+                        <li><strong>Convertible hardtop</strong> - Transforms from coupe to open in minutes with an innovative electric roof system</li>
+                        <li><strong>Joystick docking</strong> - IPS makes maneuvering in tight marinas effortless</li>
+                        <li><strong>Luxe cabin</strong> - Features a full beam master with ensuite head and separate shower</li>
+                        <li><strong>Entertaining space</strong> - Cockpit seats 8 comfortably with a teak table and electric grill</li>
+                    </ul>
+                </div>
+                
+                <p><em>Full specs and photo gallery will be available to subscribers in the members-only portal.</em></p>
+            </div>
+            
+            <!-- Maintenance Tips -->
+            <div class="section">
+                <h2>🔧 October Maintenance Checklist</h2>
+                <p>As the season winds down (or heats up for our southern friends), here are essential tasks for this month:</p>
+                
+                <div class="tips-list">
+                    <ul>
+                        <li><strong>Winterization prep</strong> - For northern boaters: Schedule engine winterization by mid-November to beat the rush</li>
+                        <li><strong>Inspect zincs</strong> - Replace if more than 50% deteriorated to protect underwater metals</li>
+                        <li><strong>Battery maintenance</strong> - Clean terminals and check voltage; consider a battery tender for winter storage</li>
+                        <li><strong>Canvas care</strong> - Clean and treat all canvas with marine-grade protectant before storage</li>
+                        <li><strong>Bilge inspection</strong> - Check for any unusual water accumulation or oil residue</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Pro Tip:</strong> Document everything with photos. This creates a maintenance history that increases resale value and helps you spot changes year over year.</p>
+            </div>
+            
+            <!-- Exclusive Deals -->
+            <div class="section">
+                <h2>💰 Exclusive Member Deals This Month</h2>
+                
+                <div class="deal-card">
+                    <h4>🎣 West Marine - 20% Off Electronics</h4>
+                    <p>Use code <strong>INSIDER20</strong> for 20% off all marine electronics including GPS, fishfinders, and radar systems. Valid through October 31st.</p>
+                </div>
+                
+                <div class="deal-card">
+                    <h4>⚓ BoatUS Membership - $20 Off</h4>
+                    <p>Join or renew your BoatUS membership and save $20. Includes on-water towing, discounts, and more. Code: <strong>POWER25</strong></p>
+                </div>
+                
+                <div class="deal-card">
+                    <h4>🏨 Renaissance Annapolis - Special Rate</h4>
+                    <p>Stay near the water for next year's show! Book now for $159/night (regular $249). Mention "Powerboat Insider 2026" when booking.</p>
+                </div>
+            </div>
+            
+            <!-- Destination Guide -->
+            <div class="section">
+                <h2>🌊 Destination of the Month: Chesapeake Bay Islands</h2>
+                <p>With fall colors in full display, the Chesapeake offers incredible cruising opportunities. Our top three picks for October:</p>
+                
+                <h3>1. Tilghman Island</h3>
+                <p>A working waterman's village with authentic charm. Dock at Knapp's Narrows Marina and enjoy fresh crab cakes at the Bridge Restaurant overlooking the harbor.</p>
+                
+                <h3>2. St. Michaels</h3>
+                <p>Upscale dining, boutique shopping, and the excellent Chesapeake Bay Maritime Museum. Town Dock Marina puts you in the heart of everything.</p>
+                
+                <h3>3. Solomons Island</h3>
+                <p>Perfect for a weekend getaway with excellent facilities at Zahniser's Marina. Don't miss sunset cocktails at The Tiki Bar.</p>
+                
+                <p><strong>Navigation Note:</strong> Watch for crab pot markers in all these areas—they're particularly dense in fall harvest season.</p>
+            </div>
+            
+            <div class="watermark">
+                <h3>This is Just a Taste!</h3>
+                <p style="color: #92400e; margin-bottom: 1rem;">Every month, subscribers receive 12-15 pages of premium content including detailed boat reviews, regional cruising guides, industry interviews, and exclusive deals.</p>
+                <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=YOUR_PLAN_ID" class="cta-button">
+                    Subscribe Now - Only $9.99/month
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Powerboat Insider</strong></p>
+            <p>Your trusted source for powerboating excellence since 2020</p>
+            <p style="margin-top: 1rem;">
+                <a href="#">Subscribe</a> | 
+                <a href="#">Manage Preferences</a> | 
+                <a href="#">Unsubscribe</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem;">
+                © 2025 Powerboat Insider. All rights reserved.<br>
+                123 Marina Way, Annapolis, MD 21401
+            </p>
+        </div>
+    </div>
+</body>
+</html>
