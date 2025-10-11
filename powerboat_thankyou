@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! Your Guide is Ready</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a365d;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .success-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            color: #dc2626;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 1.25rem 3rem;
+            border: none;
+            border-radius: 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+            transition: all 0.3s;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+        }
+        
+        .next-steps {
+            background: #f8fafc;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .next-steps h3 {
+            color: #dc2626;
+            margin-bottom: 1rem;
+        }
+        
+        .next-steps ol {
+            padding-left: 1.5rem;
+        }
+        
+        .next-steps li {
+            margin: 0.75rem 0;
+            color: #374151;
+        }
+        
+        .upsell-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .upsell-card h2 {
+            color: #7f1d1d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price-display {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #dc2626;
+        }
+        
+        .benefits-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.5);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+        
+        .benefits-list h3 {
+            color: #7f1d1d;
+            margin-bottom: 1rem;
+        }
+        
+        .benefits-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefits-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #374151;
+        }
+        
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #dc2626;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .paypal-btn {
+            background: #0070ba;
+            color: white;
+            padding: 1.25rem 3rem;
+            border: none;
+            border-radius: 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+            transition: all 0.3s;
+        }
+        
+        .paypal-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 112, 186, 0.4);
+        }
+        
+        .guarantee {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.5);
+            border-radius: 0.5rem;
+        }
+        
+        .sample-link {
+            display: inline-block;
+            color: #7f1d1d;
+            font-weight: 600;
+            margin-top: 1rem;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .success-card, .upsell-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Success Message -->
+        <div class="success-card">
+            <div class="success-icon">🎉</div>
+            <h1>Success, <span id="userName">Friend</span>!</h1>
+            <p class="subtitle">Your FREE Powerboat Show Guide is ready for download</p>
+            
+            <a href="powerboat-guide-2025.pdf" download class="download-btn">
+                📥 Download Your Guide Now
+            </a>
+            
+            <div class="next-steps">
+                <h3>What's Next?</h3>
+                <ol>
+                    <li><strong>Download your guide</strong> using the button above</li>
+                    <li><strong>Check your email</strong> for a backup copy (arriving within 5 minutes)</li>
+                    <li><strong>Review the guide</strong> before the show on October 2-5</li>
+                    <li><strong>Share with friends</strong> who are attending the show</li>
+                </ol>
+            </div>
+            
+            <p style="color: #64748b; font-size: 0.875rem; margin-top: 1.5rem;">
+                Having trouble? Email us at support@powerboatshowinsider.com
+            </p>
+        </div>
+
+        <!-- Newsletter Upsell -->
+        <div class="upsell-card">
+            <h2>🚀 Want Even More Powerboat Insights?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">You've just scratched the surface! Get ongoing expert content delivered monthly.</p>
+            
+            <div class="price-display">
+                <p style="color: #64748b; margin-bottom: 0.5rem;">Premium Monthly Newsletter</p>
+                <div class="price">$9.99<span style="font-size: 1.5rem;">/month</span></div>
+                <p style="color: #64748b; margin-top: 0.5rem;">Cancel anytime • 30-day money-back guarantee</p>
+            </div>
+            
+            <div class="benefits-list">
+                <h3>What You'll Get Every Month:</h3>
+                <ul>
+                    <li><strong>Boat Show Previews</strong> - Early access to upcoming show information</li>
+                    <li><strong>Yacht Reviews</strong> - In-depth analysis of new powerboat models</li>
+                    <li><strong>Industry News</strong> - Latest trends in powerboating and marine tech</li>
+                    <li><strong>Maintenance Tips</strong> - Expert advice for boat care and upkeep</li>
+                    <li><strong>Exclusive Deals</strong> - Member-only discounts from marine partners</li>
+                    <li><strong>Destination Guides</strong> - Best powerboating locations and marinas</li>
+                </ul>
+            </div>
+            
+            <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=YOUR_PLAN_ID" class="paypal-btn">
+                Subscribe with PayPal - $9.99/month
+            </a>
+            
+            <a href="newsletter-sample.html" class="sample-link">
+                📖 View a Sample Newsletter First
+            </a>
+            
+            <div class="guarantee">
+                <p style="font-size: 0.875rem; color: #374151;">
+                    🛡️ <strong>Risk-Free Guarantee:</strong> Try it for 30 days. If you don't love it, we'll refund your first payment—no questions asked.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get name from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('name');
+        
+        if (firstName) {
+            document.getElementById('userName').textContent = firstName;
+        }
+        
+        // Track page view for analytics
+        console.log('Thank you page loaded for:', firstName);
+    </script>
+</body>
+</html>
